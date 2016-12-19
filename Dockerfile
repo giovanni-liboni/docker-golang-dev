@@ -1,4 +1,5 @@
 FROM golang:1.7
 
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y postgresql-client
+    apt-get install -y postgresql-client ruby-dev build-essential \
+    gem install fpm
